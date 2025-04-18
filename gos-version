@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Clear the terminal screen
+clear
+
+# Path to the version file
+FILE_PATH="/etc/guideos-version"
+
+# Colors for output
+GREEN='\033[0;32m'
+BOLD='\033[1m'
+RESET='\033[0m'
+
+# Check if the file exists
+if [ -f "$FILE_PATH" ]; then
+    VERSION=$(cat "$FILE_PATH")
+    echo -e "${BOLD}OS Version:${RESET} ${GREEN}${VERSION}${RESET}"
+else
+    echo -e "${BOLD}Error:${RESET} File ${FILE_PATH} does not exist."
+    exit 1
+fi

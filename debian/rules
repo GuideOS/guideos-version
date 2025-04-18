@@ -6,15 +6,15 @@ PACKAGE := guideos-version
 	dh $@
 
 override_dh_install:
-	# Erstellen der notwendigen Verzeichnisse
-	mkdir -p debian/$(PACKAGE)/etc/
-	mkdir -p debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)
+	# Erstellen der notwendigen Verzeichnisse und Kopieren der Dateien
+	install -d debian/$(PACKAGE)/usr/bin/
+	install -d debian/$(PACKAGE)/etc/
+	install -d debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)
+	install -m 644 LICENSE debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)/LICENSE
+	install -m 644 guideos-version debian/$(PACKAGE)/etc/
+	install -m 755 gos-version debian/$(PACKAGE)/usr/bin/
 
-	# Kopieren der Dateien
-	cp LICENSE debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)/LICENSE
-	cp guideos-version debian/$(PACKAGE)/etc/
-	
-	# Setzen der Berechtigungen
+	# Setzen der Berechtigungen für Skripte
 	chmod +x debian/postinst
 	chmod +x debian/preinst
 
