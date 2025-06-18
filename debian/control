@@ -9,7 +9,7 @@ Homepage: https://guideos.de/
 Package: guideos-version
 Architecture: all
 Depends: ${misc:Depends}, bash
-Recommends: ddm-mx, evilware-wallpapers, guideos-adblocker-tool, guideos-azure-ttk, guideos-bigsur-icons, guideos-browser-mail-backup, guideos-firewall-spice, guideos-shutdown-tool, guideos-snap-installer, guideos-stop-tool, guideos-sys-mods, guideos-ticket-tool, guideos-wallpapers, guideos-wex-icons, mintstick, primo-di-tutto, python3-tkfilebrowser, raid-pasta-2k, fonts-noto-color-emoji, fonts-font-awesome, guideos-whitesur-theme, mint-themes, yaru-theme-gtk, bibata-cursor-theme
+Recommends: ddm-mx, evilware-wallpapers, guideos-adblocker-tool, guideos-azure-ttk, guideos-bigsur-icons, guideos-browser-mail-backup, guideos-firewall-spice, guideos-shutdown-tool, guideos-snap-installer, guideos-stop-tool, guideos-sys-mods, guideos-ticket-tool, guideos-wallpapers, guideos-wex-icons, mintstick, primo-di-tutto, python3-tkfilebrowser, raid-pasta-2k, fonts-noto-color-emoji, fonts-font-awesome, guideos-whitesur-theme, mint-themes, yaru-theme-gtk, bibata-cursor-theme, tgg-nvidia, guideos-data-vault, guideos-energy-tool, guideos-media-converter, guideos-snapshot-manager
 Description: Defines the version of the system
  This package defines the version of the system.
  It is used by the guideos package to determine.
